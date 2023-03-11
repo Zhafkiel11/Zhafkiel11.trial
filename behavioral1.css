@@ -1,0 +1,117 @@
+
+
+body {
+    text-align: top left;
+    font-family: Tahoma;
+    line-height: 1.5;
+    background-image: url("animecity.jpg");
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 15px 0;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 16px;
+    margin-bottom: 40px;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #333;
+}
+
+.source {
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+h2 a, .source a {
+    text-decoration: underline;
+    color: #417378;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+#cubic {
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    padding: 0 20px;
+    -webkit-perspective: 300px;
+    -moz-perspective: 300px;
+    -ms-perspective: 300px;
+    -o-perspective: 300px;
+    perspective: 280px;
+    border-radius: 3px;
+}
+
+#cubic span {
+    text-align: center;
+    display: block;
+    background: rgba(4, 65, 177, 0.233);
+    padding: 20px 50px;
+    top: 0;
+    transition: .4s all ease;
+    -webkit-transform-origin:50% 0;
+    -moz-transform-origin:50% 0;
+    -ms-transform-origin:50% 0;
+    -o-transform-origin:50% 0;
+    transform-origin:50% 0;
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-style:preserve-3d;
+    -moz-transform-style:preserve-3d;
+    -ms-transform-style:preserve-3d;
+    -o-transform-style:preserve-3d;
+    transform-style:preserve-3d;
+    border-radius: 3px;
+}
+
+#cubic:hover span {
+
+    -webkit-transform: translate3d(0px,0px,-60px) rotateX(90deg);
+    -moz-transform: translate3d(0px,0px,-60px) rotateX(90deg);
+    -ms-transform: translate3d(0px,0px,-60px) rotateX(90deg);
+    -o-transform: translate3d(0px,0px,-60px) rotateX(90deg);
+    transform: translate3d(0px,0px,-60px) rotateX(90deg);
+    border-radius: 3px;
+}
+
+#cubic span:after {
+    content: attr(title);
+    display: block;
+    width: 100%;
+    padding: 20px 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .8s all ease;
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    -o-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transform: translate3d(0px, 100%,0) rotateX(-90deg);
+    -moz-transform: translate3d(0px, 100%,0) rotateX(-90deg);
+    -ms-transform: translate3d(0px, 100%,0) rotateX(-90deg);
+    -o-transform: translate3d(0px, 100%,0) rotateX(-90deg);
+    transform: translate3d(0px, 100%,0) rotateX(-90deg);
+    border-radius: 3px;
+}
+
+#cubic:hover span:after {
+    background: #111dca36;
+    border-radius: 3px;
+}
