@@ -75,7 +75,6 @@ body {
 	--inv: #fff;
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
 	width: 8.5%;
 
 }
